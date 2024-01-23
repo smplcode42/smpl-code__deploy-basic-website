@@ -1,0 +1,92 @@
+html {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+    background-color: #374151;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 100vh
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.pill {
+  transition: .8s;
+  cursor: pointer;
+}
+
+.pill--red {
+  color: #A98484;
+}
+
+.pill--red:hover {
+  color: #a984849e;
+}
+
+.pill--blue {
+  color: #84A7A9;
+}
+
+.pill--blue:hover {
+  color: #84a7a9a1;
+}
+
+.main-content__pill-container {
+  display: flex;
+  flex-flow: row;
+  justify-content:center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pill-content {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px; 
+  cursor: pointer;
+  transition: .8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pill-content__choice {
+  transition: .8s;
+  color: #111;
+}
+
+.pill-content:hover {
+  transform: scale(1.1);
+}
+
+.pill-content:hover > .pill-content__choice{
+    color: #fff;
+}
+.pill-content--red:hover {
+  background-color: #A98484;
+}
+
+.pill-content--blue:hover {
+  background-color: #84A7A9;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
